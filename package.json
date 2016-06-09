@@ -1,0 +1,25 @@
+{
+    "name": "codeEditor",
+    "main": "./main",
+    "description": "A code editor for Wakanda Studio",
+    "version": "1.0.0",
+    "author":"Wakanda SAS",
+    "license": "MIT",
+    "repository":"https://github.com/wakanda/plugins/codeEditor",
+    "compatibleVersions": {
+        "wakanda": "*"
+    },
+    "keywords": ["Wakanda studio plugin"],
+    "dependencies": {},
+    "devDependencies": {
+        "mocha": "*",
+        "chai": "^3.5.0"
+    },
+    "editor":[
+      {
+        "fileExtension":["html","css","js","json"],
+        "embedEntery":"index.html",
+        "triggerEvents":{"onLoad":"IDE.loadFile"}
+      }
+    ]
+}
