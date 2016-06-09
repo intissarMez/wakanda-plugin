@@ -1,6 +1,6 @@
 {
     "name": "codeEditor",
-    "main": "./main",
+    "main": "./main.js",
     "description": "A code editor for Wakanda Studio",
     "version": "1.0.0",
     "author":"Wakanda SAS",
@@ -14,6 +14,9 @@
     "devDependencies": {
         "mocha": "*",
         "chai": "^3.5.0"
+    },
+    "wakandaPluginDependencies":{
+      "wakanda-extension-web-editor":"1.1.0"
     },
     "editor":[
       {
