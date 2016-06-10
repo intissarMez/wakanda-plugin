@@ -1,3 +1,12 @@
 /*ENTRY POINT TO THE PLUGIN*/
 const studio = require("wakanda-studio-api");
-const helper = require("./lib/main.js");
+
+module.exports = {
+  init : function() {
+    return;
+  },
+
+  consumeWakandaWordCount: function(serviceObj) {
+    consumeService(serviceObj)
+  }
+};
