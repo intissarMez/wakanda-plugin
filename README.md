@@ -2,13 +2,12 @@
 
 > A walkthrough on elements composing a wakanda plugin and how it should be written.....
 
-* Package.json : this file is one of the mandatory pieces of a Wakanda Studio plugin, it should be at the root of the plugin structur. It describes the extension and declares the related commands.
-
+* Package.json : This files contains metadata that describes the plugin, it should be at the root of the plugin structure.
 
 Key | Mandatory | Type | Details
 ---- |:--------:| ---- | -------
 `name` | Yes | `string` | The name of the plugin.
-`main` | Yes | `string` | Entry point to the plugin, if not found wakanda will look for an index.js or main.js.
+`main` | No | `string` | Entry point to the plugin, if not found wakanda will look for an index.js or main.js.
 `description` | Yes | `string` | Description of what your plugin does.
 `version` | Yes | `string` | The plugin version .
 `author` |No | `string`| The author of plugin.
@@ -19,7 +18,7 @@ Key | Mandatory | Type | Details
 `hint` |No | `string` | 	Additional information to display when the cursor moves over the button.
 `keywords` |No | `array` | Array of **keywords**  to find the plugin easily.
 `compatibleVersions` |Yes | `object` |Wakanda studio compatible version with the plugin.
-`triggers` |No | `array of object` | ........ .
+`triggers` |No | `array of object` | A plugin is not loaded immediately, this array defines when the plugin has t be activated.Wakanda supports two types of triggers : `Event` and `command`  .
 `menu-bar` |No | `array of object` | ..... .
 `toolbar-menu` |No | `array of object` | ..... .
 `context-menu` |No | `array of object` | ..... .
