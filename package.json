@@ -1,6 +1,6 @@
 {
     "name": "codeEditor",
-    "main": "./main.js",
+    "main": "./index.js",
     "description": "A customized code editor for Wakanda Studio",
     "version": "1.0.0",
     "author":"Wakanda SAS",
@@ -14,25 +14,7 @@
         "wakanda": "*"
     },
     "keywords": ["Wakanda studio plugin"],
-    "triggers":[
-      {"event":""},
-      {"command":""}
-    ],
-    "menu-bar":[
-      {"label":"","command":""},
-      {"gourp":""},
-      {"label":"","command":""}
-    ],
-    "toolbar-menu":[
-      {"label":"","command":""}
-    ],
-    "context-menu":[
-      {"label":"","command":""}
-    ],
-    "keybinding":[
-      {"key":"","command":""},
-      {"key":"","command":""}
-    ],
+    "triggers":[],
     "dependencies": {
       "wakanda-studio-api":"0.1.0"
     },
@@ -40,18 +22,11 @@
         "mocha": "*",
         "chai": "^3.5.0"
     },
-
-   "wakandaConsumedServices": {
-   "wakanda-word-count": {
-      "consumeWakandaWordCount" :"1.1.0"
-    }
-  },
-
   "editor":[
       {
-        "fileExtension":["html","css","js","json"],
+        "fileExtension":["html","css","js"],
         "embedEntery":"index.html",
-        "activationEvents":{"onLoad":"IDE.loadFile"}
+        "triggerEvents":{"onLoad":"IDE.loadFile"}
       }
     ]
 }

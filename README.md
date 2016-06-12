@@ -1,3 +1,3 @@
-# README
+# Code Editor README
 
-> Add Plugin Description here 
+> Add Plugin Description here

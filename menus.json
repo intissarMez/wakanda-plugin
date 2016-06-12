@@ -53,32 +53,7 @@
          ]
       }
    ],
-   "toolbar-menu":[
-      {
-         "button-type":"icon-only",
-         "title":"Save",
-         "icon":"path-to-icon",
-         "command":"IDE.save"
-      },
-      {
-         "button-type":"icon-only",
-         "title":"Redo",
-         "icon":"path-to-icon",
-         "command":"IDE.redo"
-      },
-      {
-         "button-type":"icon-only",
-         "title":"Undo",
-         "icon":"path-to-icon",
-         "command":"IDE.undo"
-      },
-      {
-         "button-type":"icon-only",
-         "title":"Toggle Comment",
-         "icon":"path-to-icon",
-         "command":"IDE.toggleComment"
-      }
-   ],
+  
    "context-menu":{
       "editor":[
          {
