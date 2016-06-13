@@ -93,7 +93,7 @@
    }
 
 },
-shortcuts:{
+"shortcuts":{
    "darwin":[
       {
          "keymap":"cmd+s",
