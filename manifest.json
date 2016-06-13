@@ -1,11 +1,10 @@
 {
-  manifest_version:"1.0.0", 
+  "manifest_version":"1.0.0", 
  "repository":"https://github.com/wakanda/plugins/codeEditor",      
  "triggers":[{
-    entry:init
-
-   }], 
-menu:{
+    "entry":"init"
+}], 
+"menu":{
    "menu-bar":[
       {
          "label":"File",
@@ -199,7 +198,7 @@ shortcuts:{
    ]
 },
 //the section below isn't a part of a new wakanda plugin
-editor:[
+"editor":[
       {
         "fileExtension":["html","css","js"],
         "embedEntery":"index.html",
